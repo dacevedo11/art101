@@ -2,16 +2,6 @@
 
 .photo {
   display: block;
-  margin: auto;
+
   width: 50%;
-}
-
-#title
-{
-  text-align: center;
-}
-
-#about-me
-{
-  text-align: center;
 }
