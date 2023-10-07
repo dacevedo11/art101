@@ -1,6 +1,7 @@
-/* this css file will only style the homepage of our site */
-
 .photo {
+  border-radius: 50%;
+  width: 15%;
+  margin: auto;
   display: block;
-  width: 50%;
 }
+
