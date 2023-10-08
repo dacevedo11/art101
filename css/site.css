@@ -9,7 +9,7 @@ body {
 
 
 /* and we can have rules that overlap other rules, both take effect */
-h1 {
+h1, h2, h3, h4, h5 {
   letter-spacing: 5px;
   word-spacing: 5px;
   font-size: 200%;
@@ -21,7 +21,13 @@ h1 {
   padding: 10px;
   border: solid 1px #888;
   background-color: #84B59F;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+article{
+  text-align: center;
+}
+
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
@@ -29,4 +35,29 @@ h1 {
   margin-bottom: 10px;
   border: solid 1px #888;
   background-color: #A3C9A8;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #50808E;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
 }
