@@ -8,12 +8,7 @@ body {
 }
 
 
-/* and we can have rules that overlap other rules, both take effect */
-h1, h2, h3, h4, h5 {
-  letter-spacing: 5px;
-  word-spacing: 5px;
-  font-size: 200%;
-}
+
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
@@ -69,47 +64,41 @@ li a:hover {
   background-color: #3C606B;
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
+/* Style for the dropdown button */
+.dropbtn {
+  display: block;
   color: white;
+  text-align: center;
   padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
+/* Style for the dropdown container (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #50808E; /* Match your background color */
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
+/* Style for the dropdown links */
 .dropdown-content a {
-  float: none;
-  color: black;
+  color: white;
   padding: 12px 16px;
-  text-decoration: none;
   display: block;
   text-align: left;
+  text-decoration: none;
 }
 
+/* Change the link color to #111 (black) on hover */
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #3C606B;
 }
 
+/* Show the dropdown content when hovering over the dropdown button */
 .dropdown:hover .dropdown-content {
   display: block;
+}

@@ -7,43 +7,38 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="css/site.css">
 	<link rel="stylesheet" type="text/css" href="css/homepage.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-pzjw8+YAiZlL3kmfY5l+5PZHDbwA5lI+7AIfj3FRheI" crossorigin="anonymous">
 </head>
 
 <body>
 
 	<div id="topnav">
 		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About Me</a></li>
-			<div class="dropdown">
-				<button class="dropdown_button">
-					<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="dropdown_content">
-					<li><a href="lab1/index.html">Lab 1</a></li>
-					<li><a href="lab2/index.html">Lab 2</a></li>
-					<li><a href="lab3/index.html">Lab 3</a></li>
-					<li><a href="lab4/index.html">Lab 4</a></li>
-					<li><a href="lab5/index.html">Lab 5</a></li>
-					<li><a href="lab6/index.html">Lab 6</a></li>
-					<li><a href="lab7/index.html">Lab 7</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about-me/index.html">About Me</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropbtn">Labs</a>
+				<div class="dropdown-content">
+					<a href="lab1/index.html">Lab 1</a>
+					<a href="lab2/index.html">Lab 2</a>
 				</div>
-			</div>
-
+			</li>
 		</ul>
 	</div>
-
+	
 	<main id="content">
 
 		<article class="minor-section">
 			<img class="photo" src="./img/photo.jpg">
 			<h1>DANIEL ACEVEDO</h1>
-			<h2>【daceved4@ucsc.edu】</h2>
-		</article>
 
-		<article class="minor-section">
-			<h3>About Me</h3>
-			<p>Hello! My name is Daniel and I am a 4th year AGPM major at UCSC. </p>
+			<ul class="icons">
+				<li><a href="mailto:daceved4@ucsc.edu" class="icon solid fa fa-envelope"></a></li>
+				<li><a href="https://www.linkedin.com/in/danacevedo/" target="_blank" class="icon brands fa fa-linkedin"></a></li>
+				<li><a href="https://dacevedo11.itch.io/" target="_blank" class="icon brands fa fa-itch-io"></a></li>
+			</ul>
+			
+			
 		</article>
 
 	</main>
