@@ -7,3 +7,9 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+  img {
+    border: 2px dashed blueviolet;
+    width: 640px;
+    height: 400px;
+  }
