@@ -7,3 +7,12 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+  img {
+    display: block;
+    float: right;
+    border: 2px solid black;
+    width: 400x;
+    height: 400px;
+    margin: 10px;
+  }
