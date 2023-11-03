@@ -1,0 +1,10 @@
+#output-box {
+    border: solid 1px black;
+    padding: 20px;
+    font-family:monospace;
+}
+
+h1 {
+    text-align: center;
+}
+
