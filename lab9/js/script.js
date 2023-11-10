@@ -3,23 +3,9 @@
 // Created: November 9, 2023
 // Requirements: jQuery must be loaded for this script to work
 
-// Challenge
-$("#challenge").append("<button id='button-challenge'>Press Me</button>");
+$(".special-sections").append("<button class='toggle-button'>Push Me</button>");
 
-$("#button-challenge").click(function(){
-    $("#challenge").toggleClass("special");
+$(".special-sections button").click(function() {
+    $(this).parent().toggleClass("special");
 });
 
-// Problems
-$("#problems").append("<button id='problems-challenge'>Press Me</button>");
-
-$("#problems-challenge").click(function(){
-    $("#problems").toggleClass("special");
-});
-
-//Results
-$("#results").append("<button id='results-challenge'>Press Me</button>");
-
-$("#results-challenge").click(function(){
-    $("#results").toggleClass("special");
-});
