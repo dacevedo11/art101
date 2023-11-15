@@ -1,0 +1,55 @@
+.special {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: violet;
+    border: 5px dashed green;
+    background-color: yellow;
+}
+
+#button {
+    margin: 1rem;
+}
+
+#output-box {
+    background-color: white;
+    margin: 10px auto;
+    border-radius: 15px;
+    border: 1px solid black;
+    min-height: 100px;
+}
+
+div {
+    display: block;
+}
+
+.text:nth-child(odd) {
+    text-align: left;
+}
+
+.text:nth-child(even) {
+    text-align: right;
+
+}
+
+.text:nth-child(even) p {
+    background-color: #45ba59;
+}
+
+.text p {
+    display: inline-block;
+    max-width: 60%;
+    margin: 3px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: darkgray;
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.8em;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
