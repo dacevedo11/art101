@@ -8,13 +8,40 @@ function sortString(inputString) {
     return inputString.split('').sort().join('');
 }
 
-// click listener for button
+// Takes a string and turns it into an anagram | Credit to Wes Modes and ChatGPT
+function anagram(inputString) {
+    // Convert the string to an array of characters
+    const charArray = inputString.split('');
 
-$("#submit").click(function () {
-    // get value of input field
+    // Use the Fisher-Yates (Knuth) shuffle algorithm to shuffle the characters
+    for (let i = charArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [charArray[i], charArray[j]] = [charArray[j], charArray[i]];
+    }
+
+    // Join the shuffled characters back into a string
+    const anagram = charArray.join('');
+
+    // Return the generated anagram
+    return anagram;
+}
+
+// given a string, return string in Title Case | Credit to Wes Modes and ChatGPT
+String.prototype.toTitleCase = function () {
+    return this.replace(/\w\S*/g, function (txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+};
+
+// click listener for button
+$("#sort").click(function () {
     const userName = $("#user-name").val();
-    // now let's sort it
-    // append a new div to our output div
     userNameSorted = sortString(userName);
-    $("#output-box").html('<div class="text"><p>' + userNameSorted + '</p></div>');
+    $("#sortbox").html('<div class="text"><p>' + userNameSorted + '</p></div>');
+});
+
+$("#shuffle").click(function () {
+    const userName = $("#user-name").val();
+    userNameShuffled = anagram(userName).toTitleCase();
+    $("#shufflebox").append('<div class="text"><p>' + userNameShuffled + '</p></div>');
 });
