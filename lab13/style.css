@@ -1,0 +1,27 @@
+#output {
+    column-width: 150px;
+}
+
+#output p {
+    margin-bottom: 1rem;
+}
+
+button {
+    margin-bottom: 10px;
+}
+
+#output-box {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    font-family: monospace;
+}
+
+.hidden{
+    display: none;
+}
+
+img {
+    width: 600px;
+    height: auto;border: 1px solid black;
+}
