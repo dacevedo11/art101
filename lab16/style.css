@@ -1,0 +1,13 @@
+#button {
+    display: none;
+}
+
+#output {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#output img {
+    border: 5px solid black;
+    margin-bottom: 1rem;
+}
